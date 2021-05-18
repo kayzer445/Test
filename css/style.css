@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+
+    background-color: white;
+}
+
+#menu{
+    display: none;
+}
+
+.navbar{
+    background-color: #983b45;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+}
+
+.menu-boton{
+    width: 20px;
+    cursor: pointer;
+}
+
+.menu-boton:hover{
+    filter: grayscale(50%);
+}
+
+.side-menu{
+    margin-top: 45px;
+    padding-top: 10px;
+    padding-left: 20px;
+    width: 200px;
+    height: 100%;
+    background-color:#f3eee4;
+    position: fixed;
+
+    -webkit-animation: fadein .5s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein .5s; /* Firefox < 16 */
+     -ms-animation: fadein .5s; /* Internet Explorer */
+      -o-animation: fadein .5s; /* Opera < 12.1 */
+         animation: fadein .5s;
+
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.side-menu li{
+    list-style-type: none;
+    color: black !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px ;
+}
+
+.side-menu li:hover{
+    background-color: cadetblue;
+}
+
+
+
+.contenedor{
+    width: 80%;
+    padding-top: 60px;
+    margin-right :  auto;
+    margin-left :  auto;
+    /* position: absolute; */
+    /* justify-content: center; */
+    z-index: -1;
+}
+
+.boton{
+    background-color: khaki;
+    color: gray;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton:hover{
+    filter: grayscale(50%);
+}
+
+.deck {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+  
+ .card {
+    text-align: center;
+    background-color: papayawhip;
+    border-radius: 3px;
+    margin-top: 2px;
+    margin-bottom: 15px;
+    flex: 0 2 23%;
+ }
+ .card p{
+    font-family: "Latin Modern Roman 10";
+    font-style: oblique;
+    font-size: 20px;
+    color: chocolate;
+ }
+
+ .card button{
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    background-color: white;
+    display: flex;
+    margin:  5px auto ;
+    padding: 10px 40px;
+    text-align: center;
+ }
+ .card button:hover{
+    filter: sepia(50%);
+ }
+
+ .cake{
+    width: 100%;
+    border-radius: 3px 3px 0 0;
+    display: inline-block;
+ }
